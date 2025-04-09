@@ -426,7 +426,61 @@ body {
   max-width: 300px;
   margin: 0 auto;
 }
+/* Key Features Section */
+.key-features-section {
+  padding: 80px 5%;
+  background-color: white;
+  text-align: center;
+}
 
+.key-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.key-feature-card {
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.key-feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.key-feature-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(37, 99, 235, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.key-feature-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--dark-color);
+}
+
+.key-feature-card p {
+  font-size: 1rem;
+  color: var(--gray-color);
+  margin-bottom: 25px;
+}
 /* Testimonials Section */
 .testimonials {
   padding: 80px 5%;
